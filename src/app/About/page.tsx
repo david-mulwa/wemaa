@@ -38,7 +38,7 @@ const  About = () => {
         <div>
           <div className='flex w-full items-center justify-between flex-wrap '>
             {partners.map((item)=>(
-              <div className='border p-5 rounded-full hover:bg-gray-200'>
+              <div className='border p-5 rounded-full hover:bg-gray-200' key={item.id}>
                 <Image
                   src={item.imgurl}
                   width={100}
