@@ -1,4 +1,5 @@
-import { Children } from "react"
+import * as React from 'react';
+
 
 
 const Section = ({
@@ -10,7 +11,7 @@ const Section = ({
   className:string;
   id:any;
   customPaddings:string;
-  children:any;
+  children: string | JSX.Element | JSX.Element[] | () => JSX.Element
 }) => {
   return (
     <div id={id} 
