@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from '../../components/Section'
+import Button from "../../components/Button";
 import Image from 'next/image'
 import {partners} from '../../components/constants'
 
@@ -26,7 +27,7 @@ const  About = () => {
 
           <p className='text-xl mt-7 '>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam.</p>
 
-          <button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Contact'>Contact Us</button>
+          <Button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Contact'>Contact Us</Button>
         </div>
       </div>
 

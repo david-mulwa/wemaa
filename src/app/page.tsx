@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from "../components/Section";
+import Button from "../components/Button";
 import  {home, services,prog} from '../components/constants'
 import Sertag from '../components/sertag'
 import Image from 'next/image'
@@ -14,8 +15,8 @@ const Home = () => {
 
         <p className='text-white text-xl mt-12 text-balance'>Being relatively in the industry the company has sourced for experienced, self-motivated staffs in logistics, transport and maintenance of the new fleet of trucks acquired to take the company to the next level of growth</p>
         <div className='flex mt-12 gap-6 items-center justify-ceenter'>
-          <button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Contact'>Contact Us</button>
-          <button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Services' >Discover More</button>
+          <Button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Contact'>Contact Us</Button>
+          <Button className='border p-3 rounded-lg mt-8  bg-gray-300' href='/Services' >Discover More</Button>
         </div>
       </div>
     </div>
