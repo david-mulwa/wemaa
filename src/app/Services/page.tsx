@@ -1,5 +1,6 @@
 import React from 'react'
 import Section from "../../components/Section";
+import Button from "../../components/Button";
 import {services, prog} from '../../components/constants'
 import Image from 'next/image'
 const Services = () => {
@@ -19,7 +20,7 @@ const Services = () => {
               <p>{item.description}</p>
             </div>
 
-            <button className='border p-3 rounded-lg mt-8  bg-gray-300 text-black  hover:bg-gray-800 hover:text-white' href='/Contact' >Get Quatation</button>
+            <Button className='border p-3 rounded-lg mt-8  bg-gray-300 text-black  hover:bg-gray-800 hover:text-white' href='/Contact' >Get Quatation</Button>
 
           </div>
         ))}
