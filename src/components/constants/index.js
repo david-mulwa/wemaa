@@ -1,4 +1,4 @@
-import {IconPhoneFilled, IconTruckDelivery, IconLocationFilled, IconCherryFilled, IconUsers,IconWorld, IconDesk} from '@tabler/icons-react'
+import {IconPhoneFilled, IconTruckDelivery, IconLocationFilled, IconCherryFilled, IconUsers,IconWorld, IconDesk, IconMail} from '@tabler/icons-react'
 
 import Kenpoly from '../../../public/kenpoly.png'
 import plastico from '../../../public/downl.png'
@@ -138,3 +138,23 @@ export const prog=[
     },
 ]
 
+export const contact=[
+    {
+        id:'0',
+        title:'OUR LOCATIONS',
+        details:'Wema Parcel Service Limited has its head office in Nairobi, Enterprise Road- Next to Easy Coach, Opposite Equity Bank. The company has another office in Mombasa located at SabaSaba Road near Vipingo Butchery, to improve service delivery.',
+        icon:(<IconLocationFilled/>)
+    },
+    {
+        id:'1',
+        title:'GET IN TOUCH',
+        details:'Send us an email:wemaparcelservicesltd@gmail.com',
+        icon:(<IconMail/>)
+    },
+    {
+        id:'2',
+        title:'HOTLINE 24/7',
+        details:'Give us a call: +254776165784 +254776166153',
+        icon:(<IconPhoneFilled/>)
+    },
+]
