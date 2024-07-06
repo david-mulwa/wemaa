@@ -1,11 +1,13 @@
 import React from 'react'
 import Section from "../../components/Section";
+import Sertag from '../../components/sertag'
 import Button from "../../components/Button";
 import {services, prog} from '../../components/constants'
 import Image from 'next/image'
 const Services = () => {
   return (
     <Section>
+      <Sertag className='mt-6'/>
       <div className='mt-4 grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4   '>
         {services.map((item)=>(
           <div key={item.id} className='card'>
