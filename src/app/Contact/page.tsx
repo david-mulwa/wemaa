@@ -12,6 +12,7 @@ const Contact = () => {
               <span>{item.icon}</span>
               <h1 className='text-2xl font-bold'>{item.title}</h1>
               <p className='text-lg'>{item.details}</p>
+            </div>
           ))}
       </div>
     </Section>
