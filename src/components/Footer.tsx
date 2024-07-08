@@ -12,12 +12,12 @@ const Footer = () => {
             <IconMail/>   
         </div>
 
-        <div  className='bg-gray-900 w-full h-auto p-5 grid grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mb-12'>
+        <div  className='bg-gray-900 w-full h-auto p-5 grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mb-2'>
             <div className=' flex flex-col justify-center '>
                 <h1 className='text-white font-bold text-4xl  '>Wema Parcels</h1>
                 <p className='text-white text-balance mt-4'>Wema Parcel Service Limited was incorporated in the Year 2018 as a Private Limited Company under the Companies Act 2015. The Company has a wide scope of activities which include logistics, warehousing and distribution.</p>
             </div>
-            <div>
+            <div className='flex items-center flex-col '>
                 {navItems.map((item)=>(
                     <Link href={item.link} key={item.name} className='flex flex-col '>
                             <span className='text-white'>{item.name}</span>

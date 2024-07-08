@@ -26,28 +26,33 @@ const Form = () => {
     e.preventDefault();
     setLoading(true);
 
-    emailjs.send('service_y7cxpme', 'template_r0obqnz', {
-      from_name: form.name,
-      to_name: 'David Mulwa',
-      from_email: form.email,
-      to_email: 'mulwakitonga2000@gmail.com',
-      phone: form.phone,
-      message: form.message,
-    }, 'EcZUuqQLWOQriag2d')
-      .then(() => {
-        setLoading(false);
-        alert('Thank you. I will get back to you as soon as possible');
-        setForm({
-          name: '',
-          email: '',
-          message: '',
-          phone: '',
-        });
-      }, (error) => {
-        setLoading(false);
-        console.error(error);
-        alert('Ahh, something went wrong. Please try again');
+    emailjs.send(
+      process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID || '',
+      process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID || '', 
+      {
+        from_name: form.name,
+        to_name: 'David Mulwa',
+        from_email: form.email,
+        to_email: 'mulwakitonga2000@gmail.com',
+        phone: form.phone,
+        message: form.message,
+      }, 
+      process.env.NEXT_PUBLIC_EMAIL_USER_ID || ''
+    )
+    .then(() => {
+      setLoading(false);
+      alert('Thank you. I will get back to you as soon as possible');
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+        phone: '',
       });
+    }, (error) => {
+      setLoading(false);
+      console.error(error);
+      alert('Ahh, something went wrong. Please try again');
+    });
   };
 
   return (
@@ -66,9 +71,7 @@ const Form = () => {
 
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-2 lg:w-[50%] xl:w-[50%]'>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
-              Your Name
-            </span>
+            <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
               name='name'
@@ -80,9 +83,7 @@ const Form = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
-              Your Email
-            </span>
+            <span className='text-white font-medium mb-4'>Your Email</span>
             <input
               type='email'
               name='email'
@@ -94,9 +95,7 @@ const Form = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
-              Your Phone Number
-            </span>
+            <span className='text-white font-medium mb-4'>Your Phone Number</span>
             <input
               type='tel'
               name='phone'
@@ -108,9 +107,7 @@ const Form = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>
-              Your Message
-            </span>
+            <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               name='message'
               value={form.message}

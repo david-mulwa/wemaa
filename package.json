@@ -11,6 +11,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@radix-ui/react-label": "^2.1.0",
+    "@sentry/nextjs": "^8.15.0",
     "@tabler/icons-react": "^3.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
@@ -23,6 +24,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "cypress": "^13.13.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8",
