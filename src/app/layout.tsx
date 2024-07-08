@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {FloatingNavDemo} from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className="bg-gray-100">
         <FloatingNavDemo/>
         <main className={inter.className}>{children}</main>
+        <Footer/>
       </body>
       
     </html>
