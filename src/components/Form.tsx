@@ -56,7 +56,7 @@ const Form = () => {
   };
 
   return (
-    <div className='md:flex-wrap sm:flex-wrap xl:flex-nowrap lg:flex-nowrap flex gap-10 overflow-hidden w-full items-center justify-between'>
+    <div className='max-md:flex-wrap max-sm:flex-wrap xl:flex-nowrap lg:flex-nowrap flex gap-10 overflow-hidden w-full items-center justify-between'>
       <div className='flex flex-col bg-black rounded-2xl items-center justify-center w-full'>
         <p className='text-3xl text-white'>Get in touch</p>
         <h3 className='text-xl mt-4'>Contact Me</h3>

@@ -27,7 +27,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <div className=' flex lg:flex-nowrap xl:flex-nowrap md:flex-wrap sm:flex-wrap gap-5  '>
+      <div className=' flex lg:flex-nowrap xl:flex-nowrap max-md:flex-wrap max-sm:flex-wrap gap-5  '>
       
       <div className='w-full gap-5 space-y-5 xl:w-[69%] lg:w-[70%]'>
         {prog.map((item)=>(
