@@ -30,7 +30,7 @@ const Track = () => {
 
         <label className='flex flex-col gap-10 w-full h-auto justify-center items-center'>
           <span className='border border-gray-200 w-full p-4 text-2xl font-bold text-white text-center rounded-lg mt-5'>Enter the Consignment No.</span>
-          <div className='flex md:flex-wrap sm:flex-wrap lg:flex-nowrap xl:flex-nowrap gap-5 w-full justify-between items-center'>
+          <div className='flex md:flex-wrap max-sm:flex-wrap lg:flex-nowrap xl:flex-nowrap gap-5 w-full justify-between items-center'>
             <input
               type='text'
               name='track'

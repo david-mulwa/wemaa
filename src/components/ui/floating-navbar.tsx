@@ -54,7 +54,7 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center flex space-x-1 text-white dark:hover:text-neutral-300 hover:text-neutral-50  "
             )}
           >
-            <span className="block sm:hidden text-white">{navItem.icon}</span>
+            <span className="block sm:hidden text-white fill-white">{navItem.icon}</span>
             <span className="hidden sm:block text-lg font-bold uppercase">{navItem.name}</span>
           </Link>
         ))}
