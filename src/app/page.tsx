@@ -49,7 +49,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='mt-12 flex h-auto gap-5 xl:flex-nowrap lg:flex-nowrap sm:flex-wrap md:flex-wrap items-center justify-between'>
+      <div className='mt-12 flex h-auto gap-5 xl:flex-nowrap lg:flex-nowrap max-sm:flex-wrap md:flex-wrap items-center justify-between'>
         <div className='flex flex-col w-full h-auto xl:h-[50%] lg:h-[50%] border-l-4 p-3 border-black xl:w-[69%] lg:w-[69%]'>
           <h6 className='font-bold text-2xl'>OUR TESTIMONIAL</h6>
           <h3 className='text-4xl font-bold mt-2 mb-4'>What customers say about us</h3>
@@ -62,7 +62,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className='top-[-500px] flex lg:flex-nowrap xl:flex-nowrap md:flex-wrap sm:flex-wrap gap-5'>
+      <div className='top-[-500px] flex lg:flex-nowrap xl:flex-nowrap md:flex-wrap max-sm:flex-wrap gap-5'>
         <div className='w-full gap-5 space-y-5 xl:w-[69%] lg:w-[70%]'>
           {prog.map((item) => (
             <div key={item.id} className='flex flex-col gap-1 group group:ease-in-out'>
